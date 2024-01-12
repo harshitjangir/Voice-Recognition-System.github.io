@@ -1,0 +1,59 @@
+{
+  "intents": [
+    {
+      "name": "accept",
+      "slots": []
+    },
+    {
+      "name": "reject",
+      "slots": []
+    },
+    {
+      "name": "describe_test",
+      "slots": [
+        {
+          "name": "noun_phrase",
+          "type": "entity"
+        },
+        {
+          "name": "test_num",
+          "type": "integer",
+          "facets": "{\"range\": [1, 10]}"
+        }
+      ]
+    },
+    {
+      "name": "slot_features",
+      "implicit_slots": [
+        {
+          "name": "feature_1",
+          "type": "entity",
+          "value": "default"
+        }
+      ],
+      "slots": [
+        {
+          "name": "feature_1",
+          "type": "entity"
+        },
+        {
+          "name": "feature_2",
+          "capture_name": "test_num",
+          "type": "integer",
+          "facets": "{\"range\": [1, 10]}"
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "o",
+    "b_noun_phrase",
+    "i_noun_phrase",
+    "b_test_num",
+    "i_test_num",
+    "b_feature_1",
+    "i_feature_1",
+    "b_feature_2",
+    "i_feature_2"
+  ]
+}

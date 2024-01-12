@@ -1,0 +1,15 @@
+# output path
+/target/
+
+# libraries/targets
+*.class
+*.jar
+*.war
+*.ear
+
+# crash logs
+hs_err_pid*
+
+# android studio/intellij
+.idea/
+*.iml
